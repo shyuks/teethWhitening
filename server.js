@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var db = require('./db/connection.js');
+var favicon = require('serve-favicon');
 var sendmail = require('sendmail')();
 
 var app = express();
