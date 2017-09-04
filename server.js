@@ -7,6 +7,8 @@ var sendmail = require('sendmail')();
 
 var app = express();
 
+app.use(favicon(path.join(__dirname, './public/img/favicon.png')))
+
 // app.use(express.favicon(__dirname + './public/img/favicon.ico'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
