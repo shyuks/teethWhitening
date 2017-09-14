@@ -19,6 +19,7 @@ app.use(favicon(path.join(__dirname, './public/img/favicon.png')));
 app.set('views', path.join(__dirname, '/public'));
 app.set('view engine','ejs');
 app.use(express.static('public/css'));
+app.use(express.static('public/mp4'));
 app.use(express.static('public/js'));
 app.use(express.static('public/bower_components'));
 app.use(express.static('public/img'));
@@ -70,7 +71,7 @@ app.post('/sendContactForm', function(req, res) {
 // });
 
 app.get('/', function(req, res) {
-    res.render('Index_A.ejs');
+    res.render('Index_F.ejs');
 });
 
 app.get('/A', function(req, res) {
@@ -93,6 +94,10 @@ app.get('/E', function(req, res) {
     res.render('Index_E.ejs');
 });
 
+app.get('/F', function(req, res) {
+    res.render('Index_F.ejs');
+});
+
 app.get('/search', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/search.html'));
 });
@@ -106,7 +111,7 @@ app.get('/article-video', function(req, res) {
 });
 
 app.get('/contact-us', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/contact_us.html'));
+    res.render('./templates/contact_us.ejs')
 });
 
 app.get('/play-video', function(req, res) {
@@ -114,75 +119,73 @@ app.get('/play-video', function(req, res) {
 });
 
 app.get('/treatments-therapies', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/treatment_therapies.html'))
+    res.render('./templates/articles/treatment_therapies.ejs')
 })
 
 app.get('/nutrition-fitness', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/nutrition_fitness.html'))
+    res.render('./templates/articles/nutrition_fitness.ejs')
 })
 
 app.get('/non-profit', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/non_profit.html'))
+    res.render('./templates/articles/non_profit.ejs')
 })
 
 app.get('/news-information', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/news_information.html'))
+    res.render('./templates/articles/news_information.ejs')
 })
 
 app.get('/new-treatments-therapies', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/new_treatment.html'))
+    res.render('./templates/articles/new_treatment.ejs')
 })
 
 app.get('/health-tip-1', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/health_tip_1.html'))
+    res.render('./templates/articles/health_tip_1.ejs')
+
 })
 
 app.get('/health-tip-2', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/health_tip_2.html'))
+    res.render('./templates/articles/health_tip_2.ejs')
 })
 
 app.get('/community-support', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/community_support.html'))
+    res.render('./templates/articles/community_support.ejs')
 })
 
 app.get('/digital-apps', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/digital_apps.html'))
+    res.render('./templates/articles/digital_apps.ejs')
 })
 
 app.get('/blog-1', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/blog-1.html'))
+    res.render('./templates/articles/blog-1.ejs')
 })
 
 app.get('/blog-2', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/blog-2.html'))
+    res.render('./templates/articles/blog-2.ejs')
 })
 
 app.get('/blog-3', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/blog-3.html'))
+    res.render('./templates/articles/blog-3.ejs')
+
 })
 
 app.get('/blog-4', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/blog-4.html'))
+    res.render('./templates/articles/blog-4.ejs')
 })
 
 app.get('/blog-5', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/articles/blog-5.html'))
+    res.render('./templates/articles/blog-5.ejs')
 })
 
 app.get('/privacy-policy', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/privacy_policy.html'))
+    res.render('./templates/privacy_policy.ejs')
 })
 
 app.get('/terms-of-use', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/terms_of_use.html'))
 })
 
-app.get('/not-found', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/non-existant.html'))
-})
-
 app.use(function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/non-existant.html'))
+    res.render('./templates/non-existant.ejs')
 })
 
 

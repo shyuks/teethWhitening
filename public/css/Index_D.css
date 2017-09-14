@@ -7,7 +7,8 @@ Page D CSS
 
 /* Landing Section */
 #landing {
-    padding: 80px 20px 0px 20px
+    padding: 80px 20px 0px 20px;
+    background-color: white;
 }
 #landing h2 {
     font-weight: bold;

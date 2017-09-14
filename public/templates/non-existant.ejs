@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- CSS -->
+        <% include ../lib/index_c_css.ejs %>
+
+        <!-- Head -->
+        <%- include ./partials/head %>
+
+    </head>
+
+    <body>
+
+        <%- include ./partials/header %>
+
+        <section id="page-not-found"  style="text-align: center; padding-top: 200px; padding-bottom: 200px; background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+                        <h3>This Page Doesn't Exist..</h3>
+                        <p>If you're looking for something specific, <br>Please reference our contact us form or contact our team at team@doctorpedia.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <%- include ./partials/footer.ejs %>
+
+        <%- include ./partials/modal.ejs %>
+
+    </body>
+
+    <!-- JS Libraries -->
+    <% include ../lib/javascript.ejs %>
+
+    <!-- Google Analytics -->
+    <% include ../lib/google_analytics %>
+
+
+</html>
