@@ -3,22 +3,35 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var db = require('./db/connection.js');
 var favicon = require('serve-favicon');
+var https = require('https');
+var http = require('http');
+var fs = require('fs');
 var sendmail = require('sendmail')();
 
 var app = express();
+//
+// var options = {
+//   cert: fs.readFileSync('./cert/client-cert.pem'),
+//   key: fs.readFileSync('./cert/client-key.pem')
+// };
 
-app.use(favicon(path.join(__dirname, './public/img/favicon.png')))
-
-// app.use(express.favicon(__dirname + './public/img/favicon.ico'));
+app.use(favicon(path.join(__dirname, './public/img/favicon.png')));
+app.set('views', path.join(__dirname, '/public'));
+app.set('view engine','ejs');
+app.use(express.static('public/css'));
+app.use(express.static('public/js'));
+app.use(express.static('public/bower_components'));
+app.use(express.static('public/img'));
+app.use(express.static('public/partials'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.engine('html', require('ejs').renderFile);
 
 app.post('/sendSubscription', function(req, res) {
-    if (typeof(req.body.payload) === 'string') {
+    if (typeof(req.body.Email) === 'string') {
         sendmail({
             from: 'team@doctorpedia.com',
-            to: req.body.payload,
+            to: req.body.Email,
             bcc: 'todd@doctorpedia.com',
             subject: 'Welcome To Doctorpedia News Letters!',
             html: '<b>Thank you for subscribing to Doctorpedia News!</b>'
@@ -26,18 +39,17 @@ app.post('/sendSubscription', function(req, res) {
             console.log(err && err.stack);
             console.dir(reply);
         });
-        res.send('sent email');
-        return;
     } else {
-        res.send('error in sending email');
+        res.send('notworkin');
     }
+    res.send('sent');
 });
 
 app.post('/sendContactForm', function(req, res) {
-    var firstName = req.body.payload.firstName;
-    var lastName = req.body.payload.lastName;
-    var email = req.body.payload.email;
-    var message = req.body.payload.message;
+    var firstName = req.body.firstName;
+    var lastName = req.body.lastName;
+    var email = req.body.email;
+    var message = req.body.message;
     if ( /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email) ) {
         sendmail({
             from: email,
@@ -53,33 +65,32 @@ app.post('/sendContactForm', function(req, res) {
     }
     res.send('sent')
 });
-
 // app.get('/', function(req, res) {
 //     res.sendFile(path.join(__dirname, './public/404/routing.html'));
 // });
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/Index_A.html'));
+    res.render('Index_A.ejs');
 });
 
 app.get('/A', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/Index_A.html'));
+    res.render('Index_A.ejs');
 });
 
 app.get('/B', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/Index_B.html'));
+    res.render('Index_B.ejs');
 });
 
 app.get('/C', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/Index_C.html'));
+    res.render('Index_C.ejs');
 });
 
 app.get('/D', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/Index_D.html'));
+    res.render('Index_D.ejs');
 });
 
 app.get('/E', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/Index_E.html'));
+    res.render('Index_E.ejs');
 });
 
 app.get('/search', function(req, res) {
