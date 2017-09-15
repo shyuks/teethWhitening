@@ -1,6 +1,4 @@
 
-
-
 html {
     overflow-x: hidden;
 }
@@ -245,11 +243,11 @@ header .ED-pedia {
 #resources {
     background-color: #CAE4F9;
 }
-#resources .row .col-xs-3 {
+#resources .row .col-xs-12 {
     padding-top: 30px;
     padding-bottom: 100px;
 }
-#resources .row .col-xs-3 img {
+#resources .row .col-xs-12 img {
     width: 30px;
     height: 30px;
 }
@@ -260,10 +258,10 @@ header .ED-pedia {
     text-decoration: none;
     color: black;
 }
-#resources .col-xs-3:hover {
+#resources .col-xs-12:hover {
     z-index: 100 !important;
 }
-#resources .col-xs-3:hover {
+#resources .col-xs-12:hover {
     z-index: 100 !important;
 }
 #resources .one {
@@ -747,8 +745,22 @@ textarea:focus, input:focus {
 
 @media screen and (max-device-width: 1025px) {
 
+    header {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
+    header .ED {
+        font-size: 26px !important;
+    }
+    header .ED-pedia {
+        font-size: 24px !important;
+    }
+    header .toggle-menu {
+        padding-top: 5px !important;
+        font-size: 25px;
+    }
     #landing h1 {
-        font-size: 90px !important;
+        font-size: 70px !important;
     }
     #landing span {
         font-size: 30px !important;
@@ -804,6 +816,7 @@ textarea:focus, input:focus {
         text-align: center !important;
         min-height: 1021px  !important;
         max-height: 1021px  !important;
+        width: auto !important;
     }
     #landing .right-side {
         text-align: center !important;
@@ -837,17 +850,26 @@ textarea:focus, input:focus {
         color: #46ADD6 !important;
         font-size: 14px !important;
     }
+    #break-point-1 {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
     #break-point-1 h4 {
         font-size: 32px  !important;
+        padding-bottom: 40px;
     }
     #break-point-1 span {
         font-size: 26px  !important;
+        padding-bottom: 40px;
+    }
+    #break-point-1 i {
+        font-size: 24px  !important;
     }
 
     #resources p {
         font-size: 20px  !important;
     }
-    #resources .row .col-xs-3 {
+    #resources .row .col-xs-12 {
         padding-top: 30px !important;
         padding-bottom: 100px !important;
     }
@@ -855,7 +877,7 @@ textarea:focus, input:focus {
         text-decoration: none !important;
         color: black!important;
     }
-    #resources .row .col-xs-3 img {
+    #resources .row .col-xs-12 img {
         width: 50px !important;
         height: 50px !important;
     }
@@ -863,6 +885,114 @@ textarea:focus, input:focus {
     #featured h3 {
         font-size: 36px  !important;
     }
+
+
+    #resources .one {
+        background-color: #E4EEF7 !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .two {
+        background-color: #D8E6F3 !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .three {
+        background-color: #CCDDEF !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .four {
+        background-color: #BFD5EC !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .five {
+        background-color: #B2CCE7 !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .six {
+        background-color: #A5C4E3 !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .seven {
+        background-color: #99BBE0 !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .eight {
+        background-color: #8CB3DC !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .nine {
+        background-color: #7FAAD7 !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .ten {
+        background-color: #6C8A8D !important;
+        min-height: 140px !important;
+        max-height: 140px !important;
+        color: white;
+    }
+    #resources .eleven {
+        background-color: #5A7682 !important;
+        color: white;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+    #resources .twelve {
+        background-color: #456572 !important;
+        color: white;
+        min-height: 140px !important;
+        max-height: 140px !important;
+    }
+
+
+
+    /* Break Point 2 */
+    #break-point-2 {
+        background:
+            linear-gradient(
+                to left,
+                white,
+                rgba(255, 255, 255, 0.6)),
+            url("/teethwhitening_healthtip1_s.jpg") no-repeat center;
+        background-size: cover;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #break-point-2 h3 {
+        font-size: 32px;
+    }
+    #break-point-2 p {
+        font-size: 22px;
+    }
+
+    /* Break Point 3 */
+    #break-point-3 {
+        background:
+            linear-gradient(
+                to right,
+                white,
+                rgba(255, 255, 255, 0.6)),
+            url("/teethwhitening_healthtip2_s.jpg") no-repeat center;
+        background-size: cover;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #break-point-2 h3 {
+        font-size: 32px;
+    }
+    #break-point-3 p {
+        font-size: 22px;
+    }
+
+
+
 
     #common-health {
         font-size: 26px  !important;
