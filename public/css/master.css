@@ -47,12 +47,11 @@ header a {
 header .ED {
     color: #7ca9d8;
     font-size: 19px;
-    font-weight: 900;
+    font-weight: 500;
     font-family: Montserrat;
     letter-spacing: 0.5px;
 }
 header .ED-desc {
-    font-weight: 600;
 }
 header .ED-pedia {
     font-weight: 0;
@@ -146,7 +145,67 @@ textarea:focus, input:focus {
     padding: 8px 0px;
 }
 
-@media screen and (max-width: 991px) {
+/* How */
+#how {
+    background-color: #B1CBE6;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+#how .how-title {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#how .how-title h4 {
+    font-size: 26px;
+}
+#how .how-content-one {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+#how .how-content-two {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background-color: #9AC6EA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer h4 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 8px;
+
+}
+#footer img {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    width: 50%;
+    height: auto 50px;
+}
+#footer p {
+    margin: 0 !important;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+#footer .about {
+    padding-bottom: 18px;
+}
+#footer .col-xs-12 i {
+    font-size: 20px;
+    padding-right: 3px;
+}
+
+@media screen and (max-width: 721px) {
 
     #main-menu .col-md-3 h4 {
         font-size: 14px;
@@ -157,52 +216,65 @@ textarea:focus, input:focus {
         padding-top: 0px;
         padding-bottom: 20px;
     }
-}
 
-/* How */
-#how {
-    background-color: #B1CBE6;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-#how .how-title {
-    padding-left: 60px;
-    padding-right: 60px;
-}
-#how .how-title h4 {
-    font-weight: bold;
-}
-#how .how-content-one {
-    padding-left: 45px;
-    padding-right: 45px;
-}
-#how .how-content-two {
-    padding-left: 45px;
-    padding-right: 45px;
-}
-#how .how-body p {
-    font-size: 12px;
-    text-align: left;
-}
+    /* How */
+    #how {
+        background-color: #B1CBE6;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    #how .how-title {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #how .how-title h4 {
+        font-size: 36px;
+    }
+    #how .how-content-one {
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+    #how .how-content-two {
+        padding-left: 45px;
+        padding-right: 45px;
+        font-size: 20px;
+        text-align: left;
+    }
 
+    /* Footer */
+    #footer {
+        text-align: center;
+        background-color: #9AC6EA;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #footer h4 {
+        font-size: 30px;
+        font-weight: 900;
+        padding-bottom: 8px;
 
+    }
+    #footer img {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width: 80%;
+        height: auto 50px;
+    }
+    #footer p {
+        margin: 0 !important;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+    #footer .about {
+        padding-bottom: 18px;
+    }
+    #footer .col-xs-12 i {
+        font-size: 34px;
+        padding-right: 3px;
+    }
 
-
-/* Footer */
-#footer {
-    background-color: #9AC6EA;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-#footer h4 {
-    font-weight: 500;
-}
-#footer p {
-    margin: 0 !important;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-#footer i {
-    font-size: 18px;
 }

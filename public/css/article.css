@@ -1,69 +1,39 @@
-/* Body */
-body {
-    padding: 0 !important;
-    background-color: grey;
-    overflow-x: hidden;
-    font-family: Montserrat;
-    width: 100%;
-    height: auto 100%;
-    margin: auto 0;
-    position: relative;
-    transition: all 0.5s ease;
-}
 
-/* Header */
-header {
-    z-index: 101;
-    width: 100%;
-    top: 0;
-    background-color: #DAE8F2;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family: Montserrat;
-    font-size: 18px;
-}
-header .search-menu {
-    text-align: right;
-    font-size: 20px;
-}
-header .search-menu i {
+
+
+#contact-us-title {
+    background-color: white;
     color: black;
-}
-header a {
-    text-decoration: none;
-    color: black;
-}
-header .ED {
-    color: #7ca9d8;
-    font-size: 19px;
-    font-weight: 600;
-    font-family: Montserrat;
-    letter-spacing: 0.5px;
-}
-header .ED-desc {
-    font-weight: 600;
-}
-header .ED-pedia {
-    font-weight: 0;
-    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 /* Sticky Social-Media */
 #sticky-social {
+    z-index: 5;
     text-align: center;
     font-size: 24px;
     background-color: transparent;
     position: fixed;
+    top: 150px;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 120px;
     padding-bottom: 50px;
 }
+
 
 /* Article Title */
 #article-title {
     background-color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+#article-title h2 {
+    padding-bottom: 60px;
+}
+#article-title .col-xs-8 hr {
+     border: solid 1px #9AC6EA !important;
 }
 
 /* Article Image */
@@ -123,16 +93,13 @@ header .ED-pedia {
     list-style: none;
     padding: 0;
 }
-
-#browse ul li {
-    text-decoration: none;
-    color: black;
-}
-
 /* Browse Resource */
 #browse {
     background-color: white;
     padding-bottom: 80px;
+}
+#browse h3 {
+    padding-bottom: 25px;
 }
 #browse ul {
     text-decoration: none;
@@ -142,57 +109,128 @@ header .ED-pedia {
 #browse ul li {
     padding: 5px;
     margin-right: 5px;
+    text-decoration: none;
+    color: black;
 }
 #browse li img {
     width: 12%;
     height: auto;
 }
 
-/* How */
-#how {
-    background-color: #AED8F9;
-    padding-top: 40px;
-    padding-bottom: 40px;
+
+/* Recent Apps */
+#recent-apps {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-#how .how-title {
-    padding-left: 60px;
-    padding-right: 60px;
+#recent-apps hr {
+    border: solid 1px #9AC6EA !important;
 }
-#how .how-title h4 {
-    font-weight: bold;
-}
-#how .how-content-one {
-    padding-left: 45px;
-    padding-right: 45px;
-}
-#how .how-content-two {
-    padding-left: 45px;
-    padding-right: 45px;
-}
-#how .how-body p {
-    font-size: 12px;
-    text-align: left;
+#recent-apps h4 {
+    font-size: 28px;
 }
 
-/* Footer */
-#footer {
-    background-color: #9AC6EA;
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+
+
+#article-tags {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    text-align: center;
 }
-#footer h4 {
-    font-weight: 500;
-}
-#footer p {
-    margin: 0 !important;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-}
-#footer i {
-    font-size: 18px;
+#article-tags h4 {
+    margin: 0;
+    padding: 0;
 }
 
+#article-tags .tag {
+    border: 1px solid black;
+    width: 50px;
+    height: 20px;
+    top: 10px;
+    display: inline-block;
+    margin-right: 5px;
+    float: left;
+}
+
+
+
+/* EZOIC ADS */
+#ezoic-ads-top {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background-color: #C7E9ED !important;
+    text-align: center;
+    position: relative;
+}
+
+#ezoic-ads {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #C7E9ED !important;
+    text-align: center;
+    position: relative;
+}
+
+
+#ezoic-pub-ad-placeholder-105 {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    height: 100px;
+    background-color: white;
+}
+
+#ezoic-pub-ad-placeholder-106 {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    height: 100px;
+    background-color: white;
+}
+
+#ezoic-pub-ad-placeholder-107 {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    height: 100px;
+    background-color: white;
+}
+
+
+
+/* Digital Apps */
+
+.apps {
+    padding-top: 30px;
+    background-color: white;
+}
+
+.app-image {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.app-desc {
+    font-size: 14px;
+}
+
+.app-store {
+    background: url("/appstore_icon.png") no-repeat;
+    background-size: cover;
+    padding-bottom: 6px;
+    padding-right: 70px;
+}
+.android-store {
+    background: url("/en_badge_web_generic.png") no-repeat;
+    background-size: cover;
+    padding-top: 2px;
+    padding-bottom: 6px;
+    padding-right: 70px;
+}
 
 /* Responsive*/
 

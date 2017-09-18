@@ -103,7 +103,7 @@ app.get('/search', function(req, res) {
 });
 
 app.get('/article', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/article.html'));
+    res.render('./templates/article.ejs', {title: 'Article'})
 });
 
 app.get('/article-video', function(req, res) {
@@ -118,62 +118,60 @@ app.get('/play-video', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/video_singular.html'))
 });
 
-app.get('/treatments-therapies', function(req, res) {
-    res.render('./templates/articles/treatment_therapies.ejs')
+app.get('/articles/treatments-therapies', function(req, res) {
+    res.render('./templates/articles/treatment_therapies.ejs', {title: "Treatments & Therapies", subPage: "Articles"})
 })
 
-app.get('/nutrition-fitness', function(req, res) {
-    res.render('./templates/articles/nutrition_fitness.ejs')
+app.get('/articles/nutrition-fitness', function(req, res) {
+    res.render('./templates/articles/nutrition_fitness.ejs', {title: "Nutrition & Fitness", subPage: "Articles"})
 })
 
-app.get('/non-profit', function(req, res) {
-    res.render('./templates/articles/non_profit.ejs')
+app.get('/articles/non-profit', function(req, res) {
+    res.render('./templates/articles/non_profit.ejs', {title: "Non Profit", subPage: "Articles"})
 })
 
-app.get('/news-information', function(req, res) {
-    res.render('./templates/articles/news_information.ejs')
+app.get('/articles/news-information', function(req, res) {
+    res.render('./templates/articles/news_information.ejs', {title: "News & Information", subPage: "Articles"})
 })
 
-app.get('/new-treatments-therapies', function(req, res) {
-    res.render('./templates/articles/new_treatment.ejs')
+app.get('/articles/new-treatments-therapies', function(req, res) {
+    res.render('./templates/articles/new_treatment.ejs', {title: "New Treatment & Therapies", subPage: "Articles"})
 })
 
-app.get('/health-tip-1', function(req, res) {
-    res.render('./templates/articles/health_tip_1.ejs')
-
+app.get('/health/health-tip-1', function(req, res) {
+    res.render('./templates/articles/health_tip_1.ejs', {title: "Health Tip 1", subPage: "Health Tips"})
 })
 
-app.get('/health-tip-2', function(req, res) {
-    res.render('./templates/articles/health_tip_2.ejs')
+app.get('/health/health-tip-2', function(req, res) {
+    res.render('./templates/articles/health_tip_2.ejs', {title: "Health Tip 2", subPage: "Health Tips"})
 })
 
 app.get('/community-support', function(req, res) {
-    res.render('./templates/articles/community_support.ejs')
+    res.render('./templates/articles/community_support.ejs', {title: "Community & Support", subPage: "Articles"})
 })
 
 app.get('/digital-apps', function(req, res) {
-    res.render('./templates/articles/digital_apps.ejs')
+    res.render('./templates/articles/digital_apps.ejs', {title: "Digital Apps", subPage: "Articles"})
 })
 
-app.get('/blog-1', function(req, res) {
-    res.render('./templates/articles/blog-1.ejs')
+app.get('/blogs/blog-1', function(req, res) {
+    res.render('./templates/articles/blog-1.ejs', {title: "Blog Page 1", subPage: "Blogs"})
 })
 
-app.get('/blog-2', function(req, res) {
-    res.render('./templates/articles/blog-2.ejs')
+app.get('/blogs/blog-2', function(req, res) {
+    res.render('./templates/articles/blog-2.ejs', {title: "Blog Page 2", subPage: "Blogs"})
 })
 
-app.get('/blog-3', function(req, res) {
-    res.render('./templates/articles/blog-3.ejs')
-
+app.get('/blogs/blog-3', function(req, res) {
+    res.render('./templates/articles/blog-3.ejs', {title: "Blog Page 3", subPage: "Blogs"})
 })
 
-app.get('/blog-4', function(req, res) {
-    res.render('./templates/articles/blog-4.ejs')
+app.get('/blogs/blog-4', function(req, res) {
+    res.render('./templates/articles/blog-4.ejs', {title: "Blog Page 4", subPage: "Blogs"})
 })
 
-app.get('/blog-5', function(req, res) {
-    res.render('./templates/articles/blog-5.ejs')
+app.get('/blogs/blog-5', function(req, res) {
+    res.render('./templates/articles/blog-5.ejs', {title: "Blog Page 5", subPage: "Blogs"})
 })
 
 app.get('/privacy-policy', function(req, res) {

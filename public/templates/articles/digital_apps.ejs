@@ -12,21 +12,9 @@
 
         <%- include ../partials/header %>
 
-        <!-- Sticky Social -->
-        <section id="sticky-social">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <!-- <i class='fa fa-facebook'></i><br>
-                        <i class='fa fa-twitter'></i><br>
-                        <i class='fa fa-instagram'></i><br>
-                        <i class='fa fa-linkedin'></i><br>
-                        <i class='fa fa-vimeo'></i><br>
-                        <i class='fa fa-envelope-o'></i> -->
-                    </div>
-                </div>
-            </div>
-        </section>
+        <%- include ../ezoic/top-page %>
+
+        <%- include ../partials/contact_sticky %>
 
         <!-- article title -->
         <section id="article-title">
@@ -36,7 +24,8 @@
                     </div>
                     <div class="col-xs-8">
 
-                        <h2>There are a number of digital apps you can use that will help you get your teeth whiter. Some popular apps are listed below.</h2>
+                        <h2>There are over 1,100 apps listed on the Apple App Store and Google Play speci cally created to help manage your diabetes. So, how do you know which tool is right for you? We’ve reviewed some of the most popular and highest rated apps to give you a starting point. Scroll down to see some of our recommendations.</h2>
+                        <hr>
 
                     </div>
                     <div class="col-xs-2">
@@ -45,35 +34,31 @@
             </div>
         </section>
 
-        <!-- Landing Paragraph -->
-        <section id="article-landing">
+        <!-- App Name 1 -->
+        <section id="article-app-1" class="apps">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
-                    <div class="col-xs-8">
-                    </div>
-                    <div class="col-xs-2">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- App Name 2 -->
-        <section id="article-app-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-2">
-                    </div>
                     <div class="col-xs-8">
-
-                        <img src="../img/ed_apps_1.png" alt="">
                         <div class="App">
-                            <h1>Teeth Whitening Care</h1>
-
-                            <p>&nbsp;<strong>WEBSITE:</strong> <a href="https://play.google.com/store/apps/developer?id=Digital+Professional+Apps" target="_blank">https://play.google.com/store/apps/developer?id=Digital+Professional+Apps</a></p>
-                            <p><strong>ITUNES:</strong> N/A</p>
-                            <p><strong>GOOGLE PLAY:</strong> <a href="https://play.google.com/store/apps/details?id=com.Teeth.Whitening.Care&amp;hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.Teeth.Whitening.Care&amp;hl=en</a></p>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="app-image">
+                                        <div class="app-image-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 app-desc">
+                                    <h4>Teeth Whitening Care</h4>
+                                    <price>Price: $2.99/month</price><br>
+                                    <a href="https://play.google.com/store/apps/developer?id=Digital+Professional+Apps"><span class="app-store"></span></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.Teeth.Whitening.Care&amp;hl=en"><span class="android-store"></span></a>
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
                         </div>
 
                         <p style="padding-top: 20px;"><strong>Function:</strong> To provide home remedies, treatments, and solutions for whiter teeth.</p>
@@ -91,21 +76,31 @@
             </div>
         </section>
 
-        <section id="article-app-2">
+        <section id="article-app-2" class="apps">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
 
-                        <img src="../img/ed_apps_2.png" alt="">
                         <div class="App">
-                            <h1>Teeth Whitening Tips - Learn How to Whiten Teeth</h1>
-                            <p><strong>WEBSITE</strong>: <a href="https://orca.tech" target="_blank">https://orca.tech</a></p>
-                            <p><strong>ITUNES</strong>: <a href="https://itunes.apple.com/no/app/teeth-whitening-tips-learn-how-to-whiten-teeth/id1114712095?mt=8" target="_blank">https://itunes.apple.com/no/app/teeth-whitening-tips-learn-how-to-whiten-teeth/id1114712095?mt=8</a></p>
-                            <p><strong>GOOGLE PLAY</strong>: N/A</p>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="app-image">
+                                        <div class="app-image-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 app-desc">
+                                    <h4>Teeth Whitening Tips - Learn How to Whiten Teeth</h4>
+                                    <price>Price: $2.99/month</price><br>
+                                    <a href="https://itunes.apple.com/no/app/teeth-whitening-tips-learn-how-to-whiten-teeth/id1114712095?mt=8"><span class="app-store"></span></a>
+                                    <a href="https://orca.tech"><span class="android-store"></span></a>
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
                         </div>
-
                         <p style="padding-top: 20px;"><strong>Function:</strong> Filled with info and videos on how to whiten teeth.&nbsp;</p>
                         <p><strong>Background:</strong> Designed by Nick Lim.</p>
                         <p><strong>General Comments:</strong> A good resource for teeth whitening tips.</p>
@@ -122,19 +117,32 @@
             </div>
         </section>
 
-        <section id="article-app-3">
+        <section id="article-app-3" class="apps">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                        <img src="../img/ed_apps_3.jpg" alt="">
+
                         <div class="App">
-                            <h1>Teeth Whitening Tips</h1>
-                            <p><strong>WEBSITE</strong>: <a href="http://www.creativeglance.com" target="_blank">http://www.creativeglance.com</a></p>
-                            <p><strong>ITUNES</strong>: <a href="https://itunes.apple.com/us/app/teeth-whitening-tips/id367225211?mt=8" target="_blank">https://itunes.apple.com/us/app/teeth-whitening-tips/id367225211?mt=8</a></p>
-                            <p><strong>GOOGLE PLAY</strong>: <a href="https://play.google.com/store/apps/details?id=com.freeappsforyou.classiccarteethwhitening&amp;hl=en" target="_blank">https://play.google.com/store/apps/details?id=com.freeappsforyou.classiccarteethwhitening&amp;hl=en</a></p>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="app-image">
+                                        <div class="app-image-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 app-desc">
+                                    <h4>Teeth Whitening Tips</h4>
+                                    <price>Price: $2.99/month</price><br>
+                                    <a href="https://itunes.apple.com/us/app/teeth-whitening-tips/id367225211?mt=8"><span class="app-store"></span></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.freeappsforyou.classiccarteethwhitening&amp;hl=en"><span class="android-store"></span></a>
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
                         </div>
+
                         <p style="padding-top: 20px;"><strong>Function:</strong> Designed to provide natural ways to brighten teeth.&nbsp;</p>
                         <p><strong>Background:</strong> Put together by Creative Glance.</p>
                         <p><strong>General Comments:</strong> An interesting app that offers up unconventional thoughts.</p>
@@ -149,20 +157,33 @@
             </div>
         </section>
 
-        <section id="article-app-4">
+        <section id="article-app-4" class="apps">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                        <img src="../img/ed_apps_4.jpg" alt="">
+
+
                         <div class="App">
-                            <h1><strong>Virtual Teeth Whitening</strong></h1>
-                            <p>&nbsp;</p>
-                            <p><strong>WEBSITE</strong>: <a href="http://www.clearlytrained.com/app-support/" target="_blank">http://www.clearlytrained.com/app-support/</a></p>
-                            <p><strong>ITUNES</strong>: <a href="https://itunes.apple.com/us/app/virtual-teeth-whitening/id633567931?mt=8" target="_blank">https://itunes.apple.com/us/app/virtual-teeth-whitening/id633567931?mt=8</a></p>
-                            <p><strong>GOOGLE PLAY</strong>: N/A</p>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="app-image">
+                                        <div class="app-image-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 app-desc">
+                                    <h4>Virtual Teeth Whitening</h4>
+                                    <price>Price: $2.99/month</price><br>
+                                    <a href="https://itunes.apple.com/us/app/virtual-teeth-whitening/id633567931?mt=8"><span class="app-store"></span></a>
+                                    <a href="http://www.clearlytrained.com/app-support/"><span class="android-store"></span></a>
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
                         </div>
+
                         <p style="padding-top: 20px;"><strong>Function: </strong>Play at being a dentist while learning how to whiten your teeth!&nbsp;</p>
                         <p><strong>Background:</strong> Created by Clearly Trained/Surgery Squad.</p>
                         <p><strong>General Comments:</strong> Take on the role of a Virtual Dentist &ndash; You are in control as you perform a teeth whitening procedure on a patient&rsquo;s teeth in this interactive educational game!</p>
@@ -177,20 +198,35 @@
             </div>
         </section>
 
-        <section id="article-app-5">
+        <%- include ../ezoic/middle-page %>
+
+        <section id="article-app-5" class="apps">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                        <img src="../img/ed_apps_5.jpg" alt="">
-                        <div class="App">
-                            <h1>Teeth Whitening</h1>
-                            <p><strong>WEBSITE</strong>: <a href="http://appsbay.co.uk" target="_blank">http://appsbay.co.uk</a></p>
-                            <p><strong>ITUNES</strong>: N/A</p>
-                            <p><strong>GOOGLE PLAY</strong>: <a href="https://play.google.com/store/apps/details?id=com.v1_4.B3CD4E28FDA4E17FF8AD05C9.com" target="_blank">https://play.google.com/store/apps/details?id=com.v1_4.B3CD4E28FDA4E17FF8AD05C9.com</a></p>
 
+
+                        <div class="App">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="app-image">
+                                        <div class="app-image-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 app-desc">
+                                    <h4>Teeth Whitening</h4>
+                                    <price>Price: $2.99/month</price><br>
+                                    <a href="http://appsbay.co.uk"><span class="app-store"></span></a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.v1_4.B3CD4E28FDA4E17FF8AD05C9.com"><span class="android-store"></span></a>
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
                         </div>
+
                         <p style="padding-top: 20px;">
                         <p><strong>Function:</strong> Find out all about tooth whitening and cosmetic dentistry on this app.</p>
                         <p><strong>Background:</strong> Made by Venture Technology Limited.</p>
@@ -206,20 +242,34 @@
             </div>
         </section>
 
-        <section id="article-app-5">
+        <section id="article-app-6" class="apps">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                        <img src="../img/ed_apps_5.jpg" alt="">
-                        <div class="App">
-                            <h1>LED Teeth Whitening Mobile App</h1>
-                            <p><strong>WEBSITE</strong>: <a href="https://www.gocanvas.com/mobile-forms-apps/7125-LED-Teeth-Whitening" target="_blank">https://www.gocanvas.com/mobile-forms-apps/7125-LED-Teeth-Whitening</a></p>
-                            <p><strong>ITUNES</strong>: N/A</p>
-                            <p><strong>GOOGLE PLAY</strong>: N/A</p>
 
+
+
+                        <div class="App">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <div class="app-image">
+                                        <div class="app-image-1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 app-desc">
+                                    <h4>LED Teeth Whitening Mobile App</h4>
+                                    <price>Price: $2.99/month</price><br>
+                                    <a href="https://www.gocanvas.com/mobile-forms-apps/7125-LED-Teeth-Whitening"><span class="app-store"></span></a>
+                                    <a href="https://www.gocanvas.com/mobile-forms-apps/7125-LED-Teeth-Whitening"><span class="android-store"></span></a>
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
                         </div>
+
                         <p style="padding-top: 20px;">
                             <strong>Function:</strong> The LED Teeth Whitening Consent form mobile app offers a convenient way to get patient consent prior to delivering in-office whitening treatments.&nbsp;</p>
                             <p><strong>Background: </strong>Aimed at dentists looking to track patient consent and signatures, this app handily generates a form the patient can fill out electronically via their smartphone/tablet/device.</p>
@@ -234,12 +284,29 @@
             </div>
         </section>
 
+        <section id="recent-apps">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-8">
+                        <hr>
+                            <h4>Recently Released and New Apps In Development <i style="color: #21ACED;">+</i></h4>
+                        <hr>
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include ../ezoic/bottom-page %>
+
         <%- include ../partials/article_browse.ejs %>
 
         <%- include ../partials/footer.ejs %>
 
         <%- include ../partials/modal.ejs %>
-
 
     </body>
 
