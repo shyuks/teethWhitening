@@ -4,6 +4,18 @@ Contact Us CSS
 
 */
 
+#contact-us-title {
+    background-color: white;
+    color: black;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+/* Sticky Social-Media */
+#sticky-social {
+    display: none;
+}
+
 
 /* Contact Us Form */
 #contact-us {

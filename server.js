@@ -111,7 +111,7 @@ app.get('/article-video', function(req, res) {
 });
 
 app.get('/contact-us', function(req, res) {
-    res.render('./templates/contact_us.ejs')
+    res.render('./templates/contact_us.ejs', {title: "Contact Us", subPage: "Support"})
 });
 
 app.get('/play-video', function(req, res) {
@@ -175,11 +175,11 @@ app.get('/blogs/blog-5', function(req, res) {
 })
 
 app.get('/privacy-policy', function(req, res) {
-    res.render('./templates/privacy_policy.ejs')
+    res.render('./templates/privacy_policy.ejs', {title: "Privacy Policy", subPage: "Legal"})
 })
 
 app.get('/terms-of-use', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/terms_of_use.html'))
+    res.render("./templates/terms_of_use.ejs", {title: "Terms Of use", subPage: "Legal"})
 })
 
 app.use(function(req, res) {
