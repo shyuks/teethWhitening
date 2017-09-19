@@ -21,9 +21,9 @@ body {
     -moz-transition: all .5s ease-out;
     transition: all .5s ease-out;
     -webkit-transition: all 0.2s ease-in;
--moz-transition: all 0.2s ease-in;
--o-transition: all 0.2s ease-in;
-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 .top-nav {
@@ -158,6 +158,8 @@ header .ED-pedia {
 #landing .banner .banner-info {
     padding-left: 20px;
     padding-top: 12px;
+    text-decoration: none;
+    color: black;
 }
 #landing .banner .banner-info h3 {
     margin: 0;
@@ -171,7 +173,7 @@ header .ED-pedia {
     font-weight: 900;
 }
 #landing .banner i {
-    color: #46ADD6;
+    color: #46ADD6 !important;
     font-size: 18px;
 }
 
@@ -1165,5 +1167,13 @@ textarea:focus, input:focus {
     }
     #videos .video-border p {
         padding-top: 10px;
+    }
+}
+
+
+@media screen and (max-device-width: 414px) {
+
+    #landing .left-side {
+        min-height: 940px !important;
     }
 }

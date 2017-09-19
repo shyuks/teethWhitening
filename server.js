@@ -19,6 +19,7 @@ app.use(favicon(path.join(__dirname, './public/img/favicon.png')));
 app.set('views', path.join(__dirname, '/public'));
 app.set('view engine','ejs');
 app.use(express.static('public/css'));
+app.use(express.static('public/min'));
 app.use(express.static('public/mp4'));
 app.use(express.static('public/js'));
 app.use(express.static('public/bower_components'));
@@ -191,10 +192,6 @@ app.listen(3000, function() {
     console.log('Listening On http://138.68.248.193:8080/');
 });
 
-// app.listen(8080, '138.68.248.193', function() {
-//     console.log('Listening On http://138.68.248.193:8080/');
-// });
-
-// app.listen(8080, '138.68.248.193', function() {
+// app.listen(80, '138.197.215.23', function() {
 //     console.log('Listening On http://138.68.248.193:8080/');
 // });

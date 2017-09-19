@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+// HOVER OVER QUESTION FOR ANSWER
     $('.question-hover').hover(function(e) {
         e.preventDefault();
         $(this).addClass('pulse');
@@ -15,6 +16,8 @@ $(document).ready(function() {
         // $(this).css('padding-bottom', '0px')
     });
 
+
+// TOGGLE ON HIDE/SHOW
     $('#resources .resource-static').hover(function(e) {
         e.preventDefault();
         $('.t-t-static').css('display', 'none');
@@ -24,15 +27,17 @@ $(document).ready(function() {
         $('.resource-on-hover').css('display', 'none');
     });
 
-    $('#resources .col-xs-12').hover(function(e) {
-        e.preventDefault();
-        $t = $(this);
-        $toggle = $t[0].getElementsByClassName('follow-topic');
-        $toggle[0].style.display = 'block';
-    }, function() {
-        $toggle[0].style.display = 'none';
-    });
+// TOGGLE FOLLOW FOR 12 NODES
+    // $('#resources .col-xs-12').hover(function(e) {
+    //     e.preventDefault();
+    //     $t = $(this);
+    //     $toggle = $t[0].getElementsByClassName('follow-topic');
+    //     $toggle[0].style.display = 'block';
+    // }, function() {
+    //     $toggle[0].style.display = 'none';
+    // });
 
+// LOOK FOR THIS A HREF BREAK AND BRINGS TO
     $('a[href^="#break-point-1"]').on('click', function(e) {
         e.preventDefault();
 
@@ -44,24 +49,24 @@ $(document).ready(function() {
         }, 500, 'swing');
     });
 
-
-    $(window).ready(function() {
-        $.fn.followTo = function (pos) {
-            var $this = this;
-            var $window = $(window);
-            $window.scroll(function (e) {
-                if ($window.scrollTop() > pos) {
-                    $this.css({
-                        position: 'absolute'
-                    });
-                } else {
-                    $this.css({
-                        position: 'fixed'
-                    });
-                }
-            });
-        };
-        $('#sticky-social').followTo(2100);
-    })
+// STICKY SOCIAL
+    // $(window).ready(function() {
+    //     $.fn.followTo = function (pos) {
+    //         var $this = this;
+    //         var $window = $(window);
+    //         $window.scroll(function (e) {
+    //             if ($window.scrollTop() > pos) {
+    //                 $this.css({
+    //                     position: 'absolute'
+    //                 });
+    //             } else {
+    //                 $this.css({
+    //                     position: 'fixed'
+    //                 });
+    //             }
+    //         });
+    //     };
+    //     $('#sticky-social').followTo(2100);
+    // })
 
 });

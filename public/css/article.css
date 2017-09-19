@@ -93,6 +93,8 @@
     list-style: none;
     padding: 0;
 }
+
+
 /* Browse Resource */
 #browse {
     background-color: white;
@@ -116,8 +118,6 @@
     width: 12%;
     height: auto;
 }
-
-
 /* Recent Apps */
 #recent-apps {
     background-color: white;
@@ -268,6 +268,10 @@
     padding-right: 70px;
 }
 
+#article-tags .col-xs-0 h4 {
+    display: block;
+}
+
 /* Responsive*/
 
 @media screen and (max-width: 1200px) {
@@ -286,4 +290,70 @@
         display: none;
     }
 
+}
+
+
+@media screen and (max-width: 995px) {
+
+    #sticky-social {
+        display: none !important;
+    }
+
+    .app-desc {
+        left: 80px !important;
+    }
+
+    #article-title hr {
+        border: solid 1px #9AC6EA !important;
+    }
+
+    #article-tags .col-xs-0 h4 {
+        display: none;
+    }
+    #browse .col-xs-10 .right-side {
+        padding-top: 0px !important;
+        padding-right: 76px !important;
+    }
+/*
+    #article-image p {
+        font-size: 30px;
+    }
+    #article-title p {
+        font-size: 30px;
+    }
+    #content-1 p {
+        font-size: 30px;
+    }*/
+}
+
+@media screen and (max-device-width: 995px) {
+
+    #sticky-social {
+        display: none !important;
+    }
+
+    .app-desc {
+        left: 80px !important;
+    }
+
+    #article-title hr {
+        border: solid 1px #9AC6EA !important;
+    }
+
+    #article-tags .col-xs-0 h4 {
+        display: none;
+    }
+
+    #article-image p {
+        font-size: 18px;
+    }
+    #article-image ul {
+        font-size: 18px;
+    }
+    #article-title p {
+        font-size: 18px;
+    }
+    #content-1 p {
+        font-size: 18px;
+    }
 }
