@@ -159,7 +159,7 @@ header .ED-pedia {
     padding-left: 20px;
     padding-top: 12px;
     text-decoration: none;
-    color: black;
+    color: black !important;
 }
 #landing .banner .banner-info h3 {
     margin: 0;
