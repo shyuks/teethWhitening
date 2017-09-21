@@ -1,19 +1,27 @@
 
 
 $(document).ready(function() {
-
 // HOVER OVER QUESTION FOR ANSWER
-    $('.question-hover').hover(function(e) {
+    var answerClicked = 0;
+
+    $('.question-hover').on('click', function(e) {
         e.preventDefault();
-        $(this).addClass('pulse');
-        $(this).addClass('.question-show');
-        $t = $(this);
-        $toggle = $t.parent()[0].getElementsByClassName('question-toggle');
-        $toggle[0].style.display = 'block';
-    }, function() {
-        $toggle[0].style.display = 'none';
-        $(this).removeClass('pulse');
-        // $(this).css('padding-bottom', '0px')
+
+        if (answerClicked === 0) {
+            $(this).addClass('pulse');
+            $(this).addClass('.question-show');
+            $t = $(this);
+            $toggle = $t.parent()[0].getElementsByClassName('question-toggle');
+            $toggle[0].style.display = 'block';
+            answerClicked = 1;
+            return;
+        } else {
+            $t = $(this);
+            $toggle = $t.parent()[0].getElementsByClassName('question-toggle');
+            $toggle[0].style.display = 'none';
+            answerClicked = 0;
+            return;
+        }
     });
 
 
