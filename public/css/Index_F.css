@@ -37,11 +37,10 @@ header {
     z-index: 101;
     width: 100%;
     top: 0;
-    /*background-color: #F7F5EF;*/
-    background-color: #EAEAEA;
+    background-color: #DAE8F2;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 18px;
 }
 header .search-menu {
@@ -56,21 +55,104 @@ header a {
     color: black;
 }
 header .ED {
-    /*color: #7ca9d8;*/
-    color: #7FAAD7;
+    color: #7ca9d8;
     font-size: 19px;
-    font-weight: 900;
-    font-family: Roboto;
-    letter-spacing: 1px;
-    font-weight: 900;
+    font-weight: 500;
+    font-family: Montserrat;
+    letter-spacing: 0.5px;
 }
 header .ED-desc {
-    font-weight: 600;
-    letter-spacing: 0.8px;
 }
 header .ED-pedia {
     font-weight: 0;
     font-size: 18px;
+}
+
+#main-menu {
+    display: none;
+}
+#main-menu .container {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #494548;
+}
+#main-menu .container .row {
+    background-color: #494548 !important;
+    padding-bottom: 10px;
+}
+#main-menu .menu-left {
+    text-align: left;
+    line-height: 20px;
+}
+#main-menu .menu-left div {
+    font-size: 14px;
+    padding: 12px 0px;
+    border-bottom: 1px solid gray;
+}
+#main-menu .menu-left div a {
+    color: white;
+}
+#main-menu .menu-left span {
+    padding: 30px;
+}
+#main-menu .menu-left span p {
+    font-size: 14px;
+    margin: 0;
+}
+#main-menu .menu-left span h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+#main-menu .menu-left span p a {
+    font-size: 14px;
+    color: white;
+}
+#main-menu .menu-left p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+}
+
+textarea:focus, input:focus {
+    color: black;
+}
+
+#main-menu .col-md-3 {
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+}
+#main-menu .col-md-3 img {
+    width: 100%;
+    padding: 10px 0px;
+}
+#main-menu .col-md-3 form input {
+    position: relative;
+    width: 200px;
+    color: black;
+}
+#main-menu .col-md-3 form button {
+    font-size: 14px;
+    position: absolute;
+    float: right;
+    height: 26px;
+    border-radius: initial;
+    padding: 2px 10px;
+    background-color: #2ED2F7;
+}
+#main-menu .col-md-3 i {
+    font-size: 24px;
+    padding-right: 5px;
+    color: white;
+}
+#main-menu .col-md-3 div p {
+    padding: 8px 0px;
 }
 
 
@@ -790,6 +872,66 @@ textarea:focus, input:focus {
 }
 #main-menu .col-md-3 div p {
     padding: 8px 0px;
+}
+
+/* How */
+#how {
+    background-color: #B1CBE6;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+#how .how-title {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#how .how-title h4 {
+    font-size: 26px;
+}
+#how .how-content-one {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+#how .how-content-two {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    background-color: #9AC6EA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer h4 {
+    font-size: 18px;
+    font-weight: 900;
+    padding-bottom: 8px;
+
+}
+#footer img {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    width: 50%;
+    height: auto 50px;
+}
+#footer p {
+    margin: 0 !important;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+#footer .about {
+    padding-bottom: 18px;
+}
+#footer .col-xs-12 i {
+    font-size: 20px;
+    padding-right: 3px;
 }
 
 
