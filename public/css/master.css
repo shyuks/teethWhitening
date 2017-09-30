@@ -207,6 +207,21 @@ textarea:focus, input:focus {
 
 @media screen and (max-width: 721px) {
 
+    html {
+        overflow-x: hidden;
+    }
+
+    p {
+        margin: 0 0 3rem;
+        font-family: Roboto !important;
+    }
+
+    #main-menu {
+        max-height: 99vh !important;
+        overflow: auto !important;
+        padding-bottom: 10rem !important;
+    }
+
     #main-menu .col-md-3 h4 {
         font-size: 14px;
         font-weight: normal;

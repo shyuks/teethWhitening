@@ -75,6 +75,10 @@ app.get('/', function(req, res) {
     res.render('Index_F.ejs');
 });
 
+app.get('/G', function(req, res) {
+    res.render('Index_G.ejs');
+});
+
 app.get('/A', function(req, res) {
     res.render('Index_A.ejs');
 });

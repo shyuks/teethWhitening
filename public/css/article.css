@@ -17,21 +17,17 @@
     position: fixed;
     top: 150px;
     width: 100%;
-    padding-top: 120px;
-    padding-bottom: 50px;
+    padding-top: 20px;
 }
 
 
 /* Article Title */
 #article-title {
     background-color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 
-#article-title h2 {
-    padding-bottom: 60px;
-}
 #article-title .col-xs-8 hr {
      border: solid 1px #9AC6EA !important;
 }
@@ -119,6 +115,7 @@
     width: 12%;
     height: auto;
 }
+
 /* Recent Apps */
 #recent-apps {
     background-color: white;

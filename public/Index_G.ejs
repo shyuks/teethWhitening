@@ -327,6 +327,26 @@
             </div>
         </section>
 
+        <!-- Videos -->
+
+        <section id="video-break">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-8">
+                        <hr>
+                        <h3>Videos</h3>
+                        <hr>
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include ./templates/partials/videos.ejs %>
+
         <!-- Recommended Blogs -->
 
         <section id="video-break">
@@ -348,55 +368,53 @@
         <!-- Community -->
         <section id="community">
             <div class="container-fluid">
-                <div class="row forum">
+                <div class="row">
                     <div class="col-xs-12 col-md-4">
-                        <div class="box">
-                            <a href="/blogs/blog-1"><div id="blog-one"></div>
+                        <div class="video-border">
+                            <a href="/blogs/blog-1"><div id="blog-one"></div></a>
                             <h4>Teeth Whitening Treatments Overview</h4>
                             <p>
                                 Are you pondering what the best way to whiten teeth is? You have two basic choices – over the counter remedies or a visit to the dentist.
                             </p>
-                            </a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <div class="box">
-                            <a href="/blogs/blog-2"><div id="blog-two"></div>
+                        <div class="video-border">
+                            <a href="/blogs/blog-2"><div id="blog-two"></div></a>
                             <h4>Differences between OTC and IO Teeth Whitening</h4>
                             <p>
                                 Let’s drill down (no pun intended) into the main differences between going to the dentist or using over-the-counter methods.
                             </p>
-                            </a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <div class="box">
-                            <a href="/blogs/blog-3"><div id="blog-three"></div>
+                        <div class="video-border">
+                            <a href="/blogs/blog-3"><div id="blog-three"></div></a>
                             <h4>Six Ways to Whiten Teeth Naturally</h4>
                             <p>
                                 Are you one of the 18% of people who feel that they have to cover up their teeth in photos? Teeth are very noticeable, and if you’re feeling self-conscious about them.
                             </p>
-                            </a>
                         </div>
                     </div>
                     <div class="col-md-2"></div>
                     <div class="col-xs-12 col-md-4">
-                        <div class="box">
-                            <a href="/blogs/blog-4"><div id="blog-four"></div>
+                        <div class="video-border">
+                            <a href="/blogs/blog-4"><div id="blog-four"></div></a>
                             <h4>Where Did My Tooth Enamel Go?</h4>
                             <p>
                                 There are many reasons to want to whiten your teeth – but before you look at the how, let’s look at why you got to this place.
                             </p>
-                            </a>    
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        <div class="box">
-                            <a href="/blogs/blog-5"><div id="blog-five"></div>
+                        <div class="video-border">
+                            <a href="/blogs/blog-5"><div id="blog-five"></div></a>
                             <h4>Five Ways to Keep Your Teeth Clean After Whitening</h4>
                             <p>
                                 So you’ve had your teeth whitened, and they’re looking amazing! Congratulations! But how do you keep them that way?
                             </p>
+                            <a href="/blog-5">
+                            <p>Read More</p>
                             </a>
                         </div>
                     </div>
@@ -425,6 +443,9 @@
 
     <!-- JS Libraries -->
     <% include ./lib/javascript %>
+
+    <!-- JW Video JS -->
+    <% include ./lib/video_urls.ejs %>
 
     <!-- Google Analytics -->
     <% include ./lib/google_analytics %>

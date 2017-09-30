@@ -372,7 +372,7 @@ header .ED-pedia {
         url("/teethwhitening_healthtip1_s.jpg") no-repeat center;
     background-size: cover;
     padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
 }
 #break-point-2 p {
     font-size: 16px;
@@ -470,7 +470,7 @@ header .ED-pedia {
         url("/teethwhitening_healthtip2_s.jpg") no-repeat center;
     background-size: cover;
     padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
 }
 #break-point-3 p {
     font-size: 16px;
@@ -522,7 +522,7 @@ header .ED-pedia {
     vertical-align: top;
     padding-bottom: 10px;
     max-height: 410px;
-    min-height: 410px;
+    min-height: 300px;
 }
 #videos .video-carousel {
 }
@@ -554,46 +554,39 @@ header .ED-pedia {
 }
 
 /* Specific Videos */
-#video-one {
+#blog-one {
     height: 200px;
     width: 100%;
     background:
         url("/teethwhitening_blog1_s.jpg") no-repeat center;
     background-size: cover;
 }
-#video-two {
+#blog-two {
     height: 200px;
     width: 100%;
     background:
         url("/teethwhitening_blog2_s.jpg") no-repeat center;
     background-size: cover;
 }
-#video-three {
+#blog-three {
     height: 200px;
     width: 100%;
     background:
         url("/teethwhitening_blog3_s.jpg") no-repeat center;
     background-size: cover;
 }
-#video-four {
+#blog-four {
     height: 200px;
     width: 100%;
     background:
         url("/teethwhitening_blog4_s.jpg") no-repeat center;
     background-size: cover;
 }
-#video-five {
+#blog-five {
     height: 200px;
     width: 100%;
     background:
         url("/teethwhitening_blog5_s.jpg") no-repeat center;
-    background-size: cover;
-}
-#video-six {
-    height: 200px;
-    width: 100%;
-    background:
-        url("/skyline.png") no-repeat center;
     background-size: cover;
 }
 
@@ -601,7 +594,6 @@ header .ED-pedia {
 /* community */
 #community {
     background-color: white;
-    padding-top: 60px;
     padding-bottom: 20px;
 }
 #community .col-xs-8 {
@@ -712,10 +704,6 @@ header .ED-pedia {
     height: 30px;
     vertical-align: top;
 }
-
-
-
-
 
 #main-menu {
     display: none;
@@ -835,33 +823,28 @@ textarea:focus, input:focus {
 
 @media screen and (max-device-width: 1025px) {
 
+    html {
+        overflow-x: hidden;
+    }
+
+    p {
+        margin: 0 0 3rem;
+        font-family: Roboto !important;
+    }
+
     header {
         padding-top: 15px !important;
         padding-bottom: 15px !important;
     }
-    header .ED {
-        font-size: 26px !important;
-    }
-    header .ED-pedia {
-        font-size: 24px !important;
-    }
     header .toggle-menu {
         padding-top: 5px !important;
-        font-size: 25px;
-    }
-    #landing h1 {
-        font-size: 70px !important;
     }
     #landing span {
         font-size: 30px !important;
     }
     #landing .left-side {
         text-align: center !important;
-        min-height: 1221px !important;
         max-height: 1221px !important;
-    }
-    #landing .left-side h4 {
-        font-size: 30px !important;
     }
     #landing .left-side i {
         left: 49% !important;
@@ -911,7 +894,7 @@ textarea:focus, input:focus {
     }
 
     #landing .banner {
-        height: 180px !important;
+        height: 190px !important;
         width: 100% !important;
         background: linear-gradient(to right, white, rgba(255, 255, 255, 0.8)) !important;
         left: 0 !important;
@@ -920,29 +903,21 @@ textarea:focus, input:focus {
     }
     #landing .banner .banner-info {
         padding-left: 20px !important;
-        padding-top: 20px !important;
     }
     #landing .banner .banner-info h2 {
         margin: 0 !important;
         padding-top: 5px !important;
         padding-bottom: 15px !important;
-        font-size: 30px !important;
-    }
-    #landing .banner .banner-info p {
-        font-size: 26px !important;
-        font-weight: 900 !important;
     }
     #landing .banner i {
         color: #46ADD6 !important;
         font-size: 14px !important;
     }
     #break-point-1 {
-        padding-top: 70px !important;
-        padding-bottom: 70px !important;
+        padding-top: 30px !important;
     }
     #break-point-1 h4 {
-        font-size: 32px  !important;
-        padding-bottom: 40px;
+        font-size: 20px !important;
     }
     #break-point-1 span {
         font-size: 26px  !important;
@@ -969,7 +944,7 @@ textarea:focus, input:focus {
     }
 
     #featured h3 {
-        font-size: 36px  !important;
+        font-size: 24px !important;
     }
 
 
@@ -1054,17 +1029,13 @@ textarea:focus, input:focus {
         padding-bottom: 40px;
     }
     #break-point-2 h3 {
-        font-size: 32px;
+        font-size: 24px !important;;
     }
     #break-point-2 p {
-        font-size: 22px;
-    }
-    #break-point-2 button {
-        height: 60px !important;
-        width: 300px;
+        font-size: 20px !important;
     }
     #break-point-2 button span {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     /* Break Point 3 */
@@ -1079,35 +1050,34 @@ textarea:focus, input:focus {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    #break-point-2 h3 {
-        font-size: 32px;
+    #break-point-3 h3 {
+        font-size: 24px;
     }
     #break-point-3 p {
-        font-size: 22px;
-    }
-    #break-point-3 button {
-        height: 60px !important;
-        width: 300px;
+        font-size: 20px;
     }
     #break-point-3 button span {
         font-size: 20px;
     }
 
     #common-health .question {
-        font-size: 30px !important;
+        font-size: 20px !important;
         padding-bottom: 40px;
     }
 
     #common-health .question-toggle {
-        font-size: 24px;
+        font-size: 20px;
     }
-
-
 
     #video-break h3 {
-        font-size: 36px  !important;
+        font-size: 24px !important;
     }
 
+
+    #videos p {
+        text-align: center !important;
+        white-space: inherit !important;
+    }
     #videos .video-border {
         display: inline-block;
         width: 100%;
@@ -1167,11 +1137,6 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 721px) {
-
-
-        #video-break h3 {
-            font-size: 36px  !important;
-        }
 
         #videos .video-border {
             display: inline-block;
