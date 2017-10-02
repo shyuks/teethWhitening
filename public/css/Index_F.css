@@ -1280,62 +1280,87 @@ textarea:focus, input:focus {
 
 @media screen and (max-width: 721px) {
 
-        #videos .video-border {
-            display: inline-block;
-            width: 100%;
-            margin: 5px  0px ;
-            background: none;
-            max-height: 230px;
-            min-height: 230px;
-        }
-        #videos #video-one {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px ;
-        }
-        #videos #video-two {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px ;
-        }
-        #videos #video-three {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px ;
-        }
-        #videos #video-four {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px ;
-        }
-        #videos #video-five {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px ;
-        }
-        #videos #video-six {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px ;
-        }
-        #videos #video-seven {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px;
-        }
-        #videos #video-eight {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px;
-        }
-        #videos #video-nine {
-            width: 50% !important;
-            float: left;
-            margin-right: 10px;
-        }
-        #videos .video-border p {
-            padding-top: 10px;
-        }
+    html {
+        overflow-x: hidden;
+    }
+
+    p {
+        margin: 0 0 3rem;
+        font-family: Roboto !important;
+    }
+
+    #main-menu {
+        max-height: 99vh !important;
+        overflow: auto !important;
+        padding-bottom: 10rem !important;
+    }
+
+    #main-menu .col-md-3 h4 {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    #main-menu .col-md-3 img {
+        width: 200px !important;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    #videos .video-border {
+        display: inline-block;
+        width: 100%;
+        margin: 5px  0px ;
+        background: none;
+        max-height: 230px;
+        min-height: 230px;
+    }
+    #videos #video-one {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px ;
+    }
+    #videos #video-two {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px ;
+    }
+    #videos #video-three {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px ;
+    }
+    #videos #video-four {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px ;
+    }
+    #videos #video-five {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px ;
+    }
+    #videos #video-six {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px ;
+    }
+    #videos #video-seven {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px;
+    }
+    #videos #video-eight {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px;
+    }
+    #videos #video-nine {
+        width: 50% !important;
+        float: left;
+        margin-right: 10px;
+    }
+    #videos .video-border p {
+        padding-top: 10px;
+    }
 }
 
 
