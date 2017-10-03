@@ -1,0 +1,572 @@
+/* 
+
+Index CSS 
+
+*/
+
+html {
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+    transition: all 0.5s;
+}
+
+/* Body */
+body {
+    padding: 0 !important;
+    background-color: grey;
+    overflow-x: hidden;
+    font-family: Roboto;
+    width: 100%;
+    height: auto 100%;
+    margin: auto 0;
+    position: relative;
+    transition: all 0.5s ease;
+    transition: all 0.5s;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.top-nav {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+}
+
+/* Landing Section */
+#landing {
+    background-color: white;
+    margin-top: 4.8rem;
+}
+
+#landing .left-side {
+    /*background-color: #4C8BC9;*/
+    background-color: #7FAAD7;
+    padding-top: 11.5rem;
+    text-align: left;
+    color: white;
+    min-height: 55rem;
+}
+#landing .left-side h1 {
+    font-family: Montserrat;
+    font-size: 5rem;
+    padding-bottom: 3rem;
+}
+#landing .left-side p {
+    line-height: 2.5rem
+}
+/* #landing .left-side h4 {
+    padding-top: 60px;
+} */
+
+/* Button pop out effect */
+#landing .left-side button {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 7px;
+    width: 180px;
+    padding-bottom: 7px;
+    border-radius: 0;
+    background-color: #22DDFE;
+    color: white;
+}
+#landing .left-side .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#landing .left-side .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -50px;
+  transition: 0.5s;
+}
+#landing .left-side .button:hover span {
+  padding-right: 20px;
+}
+#landing .left-side .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* #landing .left-side i {
+    position: absolute;
+    left: 80px;
+    padding-top: 12px;
+} */
+
+#landing .middle-side {
+    background: url("/teethwhitening_healthtip1_s.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 55rem;
+    position: relative;
+}
+#landing .banner {
+    height: 13rem;
+    width: 100%;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.5));
+    left: 0;
+    top: 67%;
+    position: absolute;
+}
+#landing .banner a {
+    text-decoration: none;
+}
+#landing .banner .banner-info {
+    font-family: Montserrat;
+    padding: 1rem;
+    text-decoration: none;
+    color: black !important;
+    margin: 1.5rem auto;
+}
+#landing .banner .banner-info span {
+    font-size: 1.5rem;
+}
+#landing .banner .banner-info h3 {
+    margin: 0;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#landing .banner .banner-info p {
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+#landing .banner i {
+    color: #46ADD6 !important;
+    font-size: 18px;
+}
+
+#landing .right-side {
+    background: url("/teethwhitening_landing_header_e.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 55rem;
+    max-height: 721px;
+    position: relative;
+}
+
+
+/* break-point-1 */
+#break-point-1 {
+    background-color: #F7FBFF;
+    padding: 2rem
+}
+#break-point-1 h4 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    text-align: center;
+}
+/* #break-point-1 .col-md-4 {
+    font-size: 12px;
+    text-align: right;
+} */
+
+/* Resources */
+#resources {
+    background-color: #CAE4F9;
+}
+#resources .row .col-xs-12 {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+#resources .row .col-xs-12 img {
+    width: 30px;
+    height: 30px;
+}
+#resources p {
+    padding-top: 10px;
+}
+#resources a {
+    text-decoration: none;
+    color: black;
+}
+#resources .col-xs-12:hover {
+    z-index: 100 !important;
+}
+#resources .col-xs-12:hover {
+    z-index: 100 !important;
+}
+#resources .one {
+    background-color: #E4EEF7 !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .two {
+    background-color: #D8E6F3 !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .three {
+    background-color: #CCDDEF !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .four {
+    background-color: #BFD5EC !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .five {
+    background-color: #B2CCE7 !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .six {
+    background-color: #A5C4E3 !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .seven {
+    background-color: #99BBE0 !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .eight {
+    background-color: #8CB3DC !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .nine {
+    background-color: #7FAAD7 !important;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .ten {
+    background-color: #6C8A8D !important;
+    min-height: 260px;
+    max-height: 260px;
+    color: white;
+}
+#resources .eleven {
+    background-color: #5A7682 !important;
+    color: white;
+    min-height: 260px;
+    max-height: 260px;
+}
+#resources .twelve {
+    background-color: #456572 !important;
+    color: white;
+    min-height: 260px;
+    max-height: 260px;
+}
+
+/* Resources Hover */
+#resources .follow-topic {
+    display: none;
+    position: absolute;
+    top: 90%;
+    font-size: 10px;
+}
+#resources .resources-on-hover:hover {
+    min-height: 275px !important;
+    max-height: 275px !important;
+}
+#resources .resource-on-hover p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Featured */
+#featured {
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#featured .col-xs-8 h3 {
+    display: inline-block;
+    margin: 0;
+}
+#featured .col-xs-8 span {
+    display: inline-block;
+    color: #43E1F9;
+    font-size: 24px;
+}
+#featured hr {
+    border-bottom: 1px solid #99BBE0;
+    width: 100%;
+}
+
+/* Common Health Questions */
+#common-health {
+    background-color: #E9F0F8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: all 0.5s ease;
+    position: relative;
+    transition-delay: 1s;
+}
+#common-health .question {
+    padding-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition-delay: 1s;
+}
+
+.question-toggle {
+    display: none;
+    padding-top: 15px;
+    font-size: 14px;
+    transition-delay: 5s;
+    opacity: 0.8;
+    /*-webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;*/
+}
+
+/* Break Point 2 */
+#break-point-2 {
+    background:
+        linear-gradient(
+            to left,
+            white,
+            rgba(255, 255, 255, 0.5)),
+        url("/teethwhitening_healthtip1_s.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#break-point-2 p {
+    font-size: 16px;
+    text-align: center;
+}
+#break-point-2 .col-xs-10 {
+    text-align: center;
+}
+#break-point-2 h3 {
+    font-size: 26px;
+}
+#break-point-2 button {
+    background-color: #22DDFE;
+    color: white;
+    width: 170px;
+    border-radius: 0;
+}
+#break-point-2 .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#break-point-2 .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -50px;
+  transition: 0.5s;
+}
+#break-point-2 .button:hover span {
+  padding-right: 20px;
+}
+#break-point-2 .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#break-point-2 button:hover {
+    box-shadow: 1px 1px 6px 1px #00272D;
+}
+
+/* Break Point 3 */
+#break-point-3 {
+    background:
+        linear-gradient(
+            to right,
+            white,
+            rgba(255, 255, 255, 0.5)),
+        url("/teethwhitening_healthtip2_s.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+#break-point-3 .col-xs-10 {
+    text-align: center;
+}
+#break-point-3 h3 {
+    font-size: 26px;
+}
+#break-point-3 .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#break-point-3 .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -50px;
+  transition: 0.5s;
+}
+#break-point-3 .button:hover span {
+  padding-right: 20px;
+}
+#break-point-3 .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#break-point-3 button:hover {
+    box-shadow: 1px 1px 6px 1px #00272D;
+}
+#break-point-3 button {
+    background-color: #22DDFE;
+    color: white;
+    width: 170px;
+    border-radius: 0;
+}
+#break-point-3 p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Videos */
+#videos {
+    background-color: white;
+    padding-bottom: 20px;
+}
+#videos h3 {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+#videos p {
+    font-size: 1.5rem;
+    text-align: left !important;
+    padding: 5px;
+    min-height: 75px;
+    white-space: pre-line;
+}
+#videos span {
+    text-align: left !important;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#videos .video-border {
+    width: 33%;
+    display: inline-block;
+    background: #E6EAED;
+    vertical-align: top;
+    padding-bottom: 10px;
+    max-height: 410px;
+    min-height: 300px;
+}
+#videos .carousel-control {
+    width: 8.5%;
+}
+#videos .carousel-control span {
+    display: inline-block;
+    font-size: 24px;
+}
+#videos .carousel-control.left {
+    background:
+    linear-gradient(
+        to right,
+        #E9F0F8,
+        rgba(255, 255, 255, 0.9)
+        );
+}
+#videos .carousel-control.right {
+    background:
+    linear-gradient(
+        to left,
+        #E9F0F8,
+        rgba(255, 255, 255, 0.9)
+        );
+}
+#videos .carousel-indicators {
+    visibility: hidden;
+}
+
+/* Community / Blogs */
+#community {
+    background-color: white;
+    padding-bottom: 20px;
+}
+#community .forum .box {
+    background-color: #EAEAEA;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#community a h4 {
+    font-size: 1.8rem;
+    padding: 1rem 2rem 0rem;
+    text-decoration: none;
+    color: #6DBFF2;
+    padding-right: 0px;
+    display: inline-block;
+}
+#community a p {
+    font-size: 1.5rem;
+    padding: 0rem 2rem 1rem;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+#community a i {
+    text-decoration: none;
+    color: #6DBFF2;
+    display: inline-block;
+}
+#community .box:hover {
+    background-color: #81C3F9;
+}
+#community .box:hover a h4 {
+    color:black;
+}
+#community .box:hover a p {
+    color:white;
+}
+#community .box:hover a i {
+    color:white;
+}
+#community .author {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+#blog-one {
+    height: 200px;
+    width: 100%;
+    background:
+        url("/teethwhitening_blog1_s.jpg") no-repeat center;
+    background-size: cover;
+}
+#blog-two {
+    height: 200px;
+    width: 100%;
+    background:
+        url("/teethwhitening_blog2_s.jpg") no-repeat center;
+    background-size: cover;
+}
+#blog-three {
+    height: 200px;
+    width: 100%;
+    background:
+        url("/teethwhitening_blog3_s.jpg") no-repeat center;
+    background-size: cover;
+}
+#blog-four {
+    height: 200px;
+    width: 100%;
+    background:
+        url("/teethwhitening_blog4_s.jpg") no-repeat center;
+    background-size: cover;
+}
+#blog-five {
+    height: 200px;
+    width: 100%;
+    background:
+        url("/teethwhitening_blog5_s.jpg") no-repeat center;
+    background-size: cover;
+}

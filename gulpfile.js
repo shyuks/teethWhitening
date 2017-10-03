@@ -13,24 +13,14 @@ gulp.task('watch', function() {
     })
 })
 
-gulp.task('indexFiveCSS', function() {
+gulp.task('index', function() {
     gulp.src([
         './public/css/master.css',
+        './public/css/index.css',
         './public/css/contact_us.css',
         './public/css/responsive.css'
     ])
-    .pipe(concat('indexFive.css'))
-    .pipe(cssmin())
-    .pipe(gulp.dest('./public/min'));
-});
-
-gulp.task('index_F_CSS', function() {
-    gulp.src([
-        './public/css/master.css',
-        './public/css/Index_F.css',
-        './public/css/contact_us.css'
-    ])
-    .pipe(concat('Index_F.css'))
+    .pipe(concat('indexCSS.css'))
     .pipe(cssmin())
     .pipe(gulp.dest('./public/min'));
 });
@@ -41,6 +31,7 @@ gulp.task('article', function() {
         './public/css/article.css',
         './public/css/contact_us.css',
         './public/css/video_series.css',
+        './public/css/responsive.css'
     ])
     .pipe(concat('articleCSS.css'))
     .pipe(cssmin())
@@ -62,7 +53,7 @@ gulp.task('scripts', function() {
 //         .pipe(gulp.dest('public/js_min'));
 // })
 
-gulp.task('default', ['article', 'index_F_CSS', 'indexFiveCSS'], function() {
+gulp.task('default', ['index', 'article'], function() {
     console.log('Gulp is running correctly..');
 });
 

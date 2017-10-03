@@ -67,61 +67,38 @@ app.post('/sendContactForm', function(req, res) {
     }
     res.send('sent')
 });
-// app.get('/', function(req, res) {
-//     res.sendFile(path.join(__dirname, './public/404/routing.html'));
+    
+    app.get('/', function(req, res) {
+        res.render('Index_F.ejs');
+    });
+    
+    app.get('/F', function(req, res) {
+        res.render('Index_F.ejs');
+    });
+
+    app.get('/G', function(req, res) {
+        res.render('Index_G.ejs');
+    });
+
+// app.get('/search', function(req, res) {
+//     res.sendFile(path.join(__dirname, './public/templates/search.html'));
 // });
 
-app.get('/', function(req, res) {
-    res.render('Index_F.ejs');
-});
+// app.get('/article', function(req, res) {
+//     res.render('./templates/article.ejs', {title: 'Article'})
+// });
 
-app.get('/G', function(req, res) {
-    res.render('Index_G.ejs');
-});
-
-app.get('/A', function(req, res) {
-    res.render('Index_A.ejs');
-});
-
-app.get('/B', function(req, res) {
-    res.render('Index_B.ejs');
-});
-
-app.get('/C', function(req, res) {
-    res.render('Index_C.ejs');
-});
-
-app.get('/D', function(req, res) {
-    res.render('Index_D.ejs');
-});
-
-app.get('/E', function(req, res) {
-    res.render('Index_E.ejs');
-});
-
-app.get('/F', function(req, res) {
-    res.render('Index_F.ejs');
-});
-
-app.get('/search', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/search.html'));
-});
-
-app.get('/article', function(req, res) {
-    res.render('./templates/article.ejs', {title: 'Article'})
-});
-
-app.get('/article-video', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/article_video.html'));
-});
+// app.get('/article-video', function(req, res) {
+//     res.sendFile(path.join(__dirname, './public/templates/article_video.html'));
+// });
 
 app.get('/contact-us', function(req, res) {
     res.render('./templates/contact_us.ejs', {title: "Contact Us", subPage: "Support"})
 });
 
-app.get('/play-video', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/video_singular.html'))
-});
+// app.get('/play-video', function(req, res) {
+//     res.sendFile(path.join(__dirname, './public/templates/video_singular.html'))
+// });
 
 app.get('/articles/treatments-therapies', function(req, res) {
     res.render('./templates/articles/treatment_therapies.ejs', {title: "Treatments & Therapies", subPage: "Articles"})

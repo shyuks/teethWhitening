@@ -7,8 +7,8 @@ Contact Us CSS
 #contact-us-title {
     background-color: white;
     color: black;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 /* Sticky Social-Media */
@@ -20,7 +20,7 @@ Contact Us CSS
 /* Contact Us Form */
 #contact-us {
     background-color: white;
-    padding-top: 20px;
+    padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
 }
@@ -30,9 +30,12 @@ Contact Us CSS
 #contact-us .col-xs-12 input {
     border: 1px solid black;
     margin-top: 10px;
+    padding: 10px;
 }
 #contact-us .col-xs-12 textarea {
+    border: 1px solid black;
     margin-top: 15px;
+    padding: 10px;
 }
 #contact-us .col-xs-12 button {
     background: linear-gradient(to left top, #68CCF9, #54A4C9);
@@ -42,26 +45,4 @@ Contact Us CSS
     padding-left: 26px;
     border-radius: 20px;
     margin-top: 20px;
-}
-
-
-
-/* Responsive*/
-
-@media screen and (max-width: 1200px) {
-
-    header .Title {
-        display: inline-block;
-    }
-    header .ED-desc {
-        display: none;
-    }
-    header .search-menu {
-        float: right;
-        display: inline-block;
-    }
-    header .hr {
-        display: none;
-    }
-
 }

@@ -12,6 +12,8 @@
 
         <%- include ../partials/header %>
 
+        <%- include ../ezoic/top-page %>
+
         <!-- Sticky Social -->
         <section id="sticky-social">
             <div class="container">
@@ -38,8 +40,21 @@
 
                         <h1>Where Did My Tooth Enamel Go?</h1>
 
-                        <h2><em>Yes, that LaCroix may actually be killing your teeth.</em></h2>
-                        
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- article image -->
+        <section id="article-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <img src="/teethwhitening_blog4_s.jpg" alt="" style="width: 100%;">
                         <p>
                             There are many reasons to want to whiten your teeth &ndash; but before you look at the how, let&rsquo;s 
                             look at why you got to this place.
@@ -51,7 +66,6 @@
                             can&rsquo;t grow back. That means all of the erosion from food, drinks (yes, even LaCroix), and other 
                             factors is permanent.
                         </p>
-
                     </div>
                     <div class="col-md-2">
                     </div>
@@ -99,41 +113,49 @@
                         
                         <h3>Food</h3>
                         <p>What you eat is also a huge contributor to enamel erosion. Specifically be aware of:</p>
-                        
-                        <p><strong>Soda</strong></p>
-                        <p>
-                            Whether they&rsquo;re diet or regular, sodas are very dangerous to tooth enamel. One study even found they 
-                            can be worse on the teeth than drug abuse &ndash; another study produced results that showed soda could be 
-                            ten times worse for enamel than fruit juice.
-                        </p>
-
-                        <p><strong>Fruit Juice</strong></p>
-                        <p>
-                            Filled with sugar, though not as bad as soda, these drinks can still create high acid production inside 
-                            your mouth.
-                        </p>
-                        
-                        <p><strong>Flavored Water</strong></p>
-                        <p>
-                            Despite not having any sugar, they do contain citric acid which creates acid inside your mouth. Sadly, 
-                            this even means LaCroix.
-                        </p>
-
-                        <p><strong>Citrus Fruits</strong></p>
-                        <p>
-                            Despite being healthier than sugary sweets, they come with a lot of acids and can cause enamel erosion.
-                        </p>
-
-                        <p><strong>Sugary Snackables</strong></p>
-                        <p>
-                            If you&rsquo;re eating sticky, chewy sweets with lots of sugar, you&rsquo;re putting a substance inside 
-                            your mouth that sticks to your teeth and harms the enamel.
-                        </p>
-
-                        <p><strong>Starch Snackables</strong></p>
-                        <p>
-                            Avoid carb-heavy foodstuffs (white bread, crackers, chips) because they can stay in the mouth producing acid.
-                        </p>
+                        <ul>
+                            <li>
+                                <p><strong>Soda</strong></p>
+                                <p>
+                                    Whether they&rsquo;re diet or regular, sodas are very dangerous to tooth enamel. One study even found they 
+                                    can be worse on the teeth than drug abuse &ndash; another study produced results that showed soda could be 
+                                    ten times worse for enamel than fruit juice.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Fruit Juice</strong></p>
+                                <p>
+                                    Filled with sugar, though not as bad as soda, these drinks can still create high acid production inside 
+                                    your mouth.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Flavored Water</strong></p>
+                                <p>
+                                    Despite not having any sugar, they do contain citric acid which creates acid inside your mouth. Sadly, 
+                                    this even means LaCroix.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Citrus Fruits</strong></p>
+                                <p>
+                                    Despite being healthier than sugary sweets, they come with a lot of acids and can cause enamel erosion.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Sugary Snackables</strong></p>
+                                <p>
+                                    If you&rsquo;re eating sticky, chewy sweets with lots of sugar, you&rsquo;re putting a substance inside 
+                                    your mouth that sticks to your teeth and harms the enamel.
+                                </p>
+                            </li>
+                            <li>
+                                <p><strong>Starch Snackables</strong></p>
+                                <p>
+                                    Avoid carb-heavy foodstuffs (white bread, crackers, chips) because they can stay in the mouth producing acid.
+                                </p>
+                            </li>
+                        </ul>
 
                     </div>
                     <div class="col-md-2"></div>
@@ -141,8 +163,12 @@
             </div>
         </section>
 
+        <%- include ../ezoic/middle-page %>
+
         <%- include ../partials/article_browse.ejs %>
 
+        <%- include ../ezoic/bottom-page %>
+        
         <%- include ../partials/footer.ejs %>
 
         <%- include ../partials/modal.ejs %>

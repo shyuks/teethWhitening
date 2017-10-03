@@ -3,7 +3,7 @@
     <head>
 
         <!-- CSS -->
-        <% include ./lib/index_f.ejs %>
+        <% include ./lib/index_css.ejs %>
 
         <!-- Head -->
         <%- include ./templates/partials/head %>
@@ -21,9 +21,9 @@
                 <div class="row">
                     <div class="col-md-4 left-side">
                         <h1>Teeth<br>Whitening</h1>
-                        <span> If you’re looking to get your teeth a bit whiter, browse our resources below to learn more about the different options and communities.</span><br>
+                        <p> If you’re looking to get your teeth a bit whiter, browse our resources below to learn more about the different options and communities.</p>
                         <a href="#break-point-1"><button type="button" name="button" class="button btn"><span>Learn more</span></button></a>
-                        <h4>Our Resource Library <br> <a href="#break-point-1"><i class="animated fadeOutDown infinite fa fa-chevron-down" aria-hidden="true" style="color: white;"></i></a></h4>
+                        <!-- <h4>Our Resource Library <br> <a href="#break-point-1"><i class="animated fadeOutDown infinite fa fa-chevron-down" aria-hidden="true" style="color: white;"></i></a></h4> -->
                     </div>
                     <div class="col-md-4 middle-side">
                         <div class="banner">
@@ -55,9 +55,11 @@
         <section id="break-point-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h4><b>When it comes to our health, we all want the best resources around.</b> Choose from the following categories:</h4>
+                    <div class="col-md-1"></div>
+                    <div class="col-xs-12 col-md-10">
+                        <h4>When it comes to our health, we all want the best resources around. <br> Choose from the following categories:</h4>
                     </div>
+                    <div class="col-md-1"></div>
                     <!-- <div class="col-md-4">
                         <span style="color: #19BDD6; font-weight: 900;">Learn our vetting process</span><br>
                         <span><b>Not sure where to start? Try our health guide<b> <i class="fa fa-chevron-circle-right" style="color: #19BDD6; font-size: 14px;"></i></span>
@@ -85,37 +87,37 @@
                         </div>
                     </a> -->
                     <a href="/articles/news-information">
-                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow three">
+                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow one">
                             <img src="/icon_newsinformation.png" alt=""><br>
                             <p>News & Information</p>
                             <span class="follow-topic">+ Follow Topic</span>
                         </div>
                     </a>
+                    <a href="/articles/treatments-therapies">
+                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow two">
+                            <img src="/icon_treatmenttherapies.png" alt=""><br>
+                            <p>Treatments & Therapies</p>
+                            <span class="follow-topic">+ Follow Topic</span>
+                        </div>
+                    </a>
                     <a href="/digital-apps">
-                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow four">
+                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow three">
                             <img src="/icon_digitalapps.png" alt=""><br>
                             <p>Digital Apps</p>
                             <span class="follow-topic">+ Follow Topic</span>
                         </div>
                     </a>
                     <a href="/articles/nutrition-fitness">
-                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow five">
+                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow four">
                             <img src="/icon_nutritionfitness.png" alt=""><br>
                             <p>Nutrition & Fitness</p>
                             <span class="follow-topic">+ Follow Topic</span>
                         </div>
                     </a>
                     <a href="/community-support">
-                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow six">
+                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow five">
                             <img src="/icon_communitysupport.png" alt=""><br>
                             <p>Community & Support</p>
-                            <span class="follow-topic">+ Follow Topic</span>
-                        </div>
-                    </a>
-                    <a href="/articles/treatments-therapies">
-                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow seven">
-                            <img src="/icon_treatmenttherapies.png" alt=""><br>
-                            <p>Treatments & Therapies</p>
                             <span class="follow-topic">+ Follow Topic</span>
                         </div>
                     </a>
@@ -134,7 +136,7 @@
                         </div>
                     </a> -->
                     <a href="/articles/non-profit">
-                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow ten">
+                        <div class="col-xs-12 col-md-2 col-lg-2 hvr-grow six">
                             <img src="/icon_nonprofit.png" alt=""><br>
                             <p>Non-profit Organizations</p>
                             <span class="follow-topic">+ Follow Topic</span>
@@ -158,7 +160,7 @@
             </div>
         </section>
 
-        <!-- HR -->
+        <!-- Common Health Break -->
         <section id="featured">
             <div class="container-fluid">
                 <div class="row">
@@ -328,15 +330,14 @@
         </section>
 
         <!-- Recommended Blogs -->
-
-        <section id="video-break">
-            <div class="container">
+        <section id="featured">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
                         <hr>
-                        <h3>RECOMMENDED BLOGS</h3>
+                        <h3>Recommended Blogs</h3> <br>
                         <hr>
                     </div>
                     <div class="col-xs-2">
@@ -347,9 +348,9 @@
 
         <!-- Community -->
         <section id="community">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row forum">
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-md-6">
                         <div class="box">
                             <a href="/blogs/blog-1"><div id="blog-one"></div>
                             <h4>Teeth Whitening Treatments Overview</h4>
@@ -359,7 +360,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-4">
+                    <div class="col-xs-12 col-md-6">
                         <div class="box">
                             <a href="/blogs/blog-2"><div id="blog-two"></div>
                             <h4>Differences between OTC and IO Teeth Whitening</h4>
@@ -379,7 +380,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-2"></div>
                     <div class="col-xs-12 col-md-4">
                         <div class="box">
                             <a href="/blogs/blog-4"><div id="blog-four"></div>
@@ -400,7 +400,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-2"></div>
                 </div>
             </div>
 
@@ -421,6 +420,7 @@
         <%- include ./templates/partials/footer %>
 
         <%- include ./templates/partials/modal %>
+    
     </body>
 
     <!-- JS Libraries -->
