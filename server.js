@@ -69,14 +69,14 @@ app.post('/sendContactForm', function(req, res) {
 });
     
     app.get('/', function(req, res) {
-        res.render('Index_F.ejs');
+        res.render('blank.ejs');
     });
     
-    app.get('/F', function(req, res) {
+    app.get('/demoF', function(req, res) {
         res.render('Index_F.ejs');
     });
 
-    app.get('/G', function(req, res) {
+    app.get('/demoG', function(req, res) {
         res.render('Index_G.ejs');
     });
 
